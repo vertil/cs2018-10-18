@@ -21,14 +21,24 @@ package by.it.Vertinsky.lesson03;
 */
 public class TaskC2 {
 
-       /* public static void main(String[] args) {
-        System.out.println(sumDigitsInNumber(5467));
+       public static void main(String[] args) {
+           System.out.println(sumDigitsInNumber(5467));
         };
-        public static int sumDigitsInNumber(int n, int sum){
-            for ( ; n > 0; n /= 10)
-            int sum1= sum+(n%10);
-            return sum;
+            public static int sumDigitsInNumber(int n){
+                int sum=0;
+                    int y = n % 10;
+                    sum += y;
+                    n/=10;
+                    y = n % 10;
+                    sum += y;
+                    n/=10;
+                    y = n % 10;
+                    sum += y;
+                    n/=10;
+                    sum=sum+n;
 
-        }; */
+                     return sum;
 
+        }
 }
+
