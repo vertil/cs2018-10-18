@@ -34,9 +34,12 @@ public class TaskB3 {
         int x = sc.nextInt();
         int sum=0;
         int a=1;
-        for (;a<x;a++) {
+        for (;sum<x;a++) {
             sum=sum+a;
-            System.out.print(sum+",");}
+            if (sum>x)
+                break;
+            else System.out.print(sum+",");
+        }
 
     }
 }
